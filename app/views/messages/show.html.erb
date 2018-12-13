@@ -1,5 +1,9 @@
-<h1><%= @message.title %></h1>
+<div data-controller="messages" data-messages-id="<%= @message.id %>">
 
-<p><%= @message.content %></p>
+  <h1><%= @message.title %></h1>
 
-<%= render 'comments/comments', message: @message %>
+  <p><%= @message.content %></p>
+
+  <%= render 'comments/comments', message: @message %>
+
+</div>
